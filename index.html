@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" :>
+    <link rel="stylesheet" href="main.css">
+    <title>Accounuts</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <a href="" class="navbar-brand">Accounuts</a>
+        <ul class="navbar-nav m-lg-auto">
+            <li class="nav-item">
+                <a href="accounts-view" class="nav-link">Accounuts</a>
+            </li>
+            <li class="nav-item">
+                <a href="add-account-view" class="nav-link">Add Accounuts</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+
+        <!---Accaunuts Wiew-->
+        <div class="row view" id="accounts-view">
+            <div class="col-10 offset-1">
+                <h2 class="display-4 m-4">Accounts</h2>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Lastname</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Edit</th>
+                                    <th>Delate</th>
+                                </tr>
+                            </thead>
+                            <tbody id="accounts-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Accounts View End-->
+
+        <!--Add Accounts View-->
+        <div class="row view" id="add-account-view">
+            <div class="col-10 offset-1">
+                <h2 class="display-4 m-4">Add Accounts</h2>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <input type="text" class="form-control" placeholder="id"><br>
+                        <input type="text" class="form-control" placeholder="name"><br>
+                        <input type="text" class="form-control" placeholder="lastname"><br>
+                        <input type="text" class="form-control" placeholder="email"><br>
+                        <input type="text" class="form-control" placeholder="phone"><br>
+                        <button id="add-save" class="form-control btn btn-info">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Add Accounts View End-->
+
+        <!--Edit Accounts View-->
+        <div class="row view" id="edit-account-view">
+            <div class="col-10 offset-1">
+                <h2 class="display-4 m-4">Edit Accounts</h2>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <input type="text" class="form-control edit-id"><br>
+                        <input type="text" class="form-control edit-name"><br>
+                        <input type="text" class="form-control edit-lastname"><br>
+                        <input type="text" class="form-control edit-email"><br>
+                        <input type="text" class="form-control edit-phone"><br>
+                        <button id="edit-save" class="form-control btn btn-warning">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Edit Accounts View End-->
+
+    </div>
+    <script src="db.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
