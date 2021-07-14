@@ -8,4 +8,5 @@ Single page aplication for menage with accounts.
 
 - Semantic HTML5 markup
 - CSS
+- Bootstrap 5
 - JavaScript
