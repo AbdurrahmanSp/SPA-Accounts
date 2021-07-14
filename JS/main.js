@@ -79,7 +79,7 @@ function showView(e) {
 }
 
 /*
-//Manual add click listener
+Manual add click listeners
 
 addAccountsViewBtn.addEventListener('click', function(e) {
     e.preventDefault();
